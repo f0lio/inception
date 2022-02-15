@@ -1,0 +1,5 @@
+.env*
+!.env.example
+*.pem
+.DS_Store
+.test
