@@ -12,7 +12,6 @@ RUN curl -o /tmp/wordpress.tar.gz -LO https://wordpress.org/latest.tar.gz \
     && tar -xzf /tmp/wordpress.tar.gz -C /var/www && rm /tmp/wordpress.tar.gz \
     && rm -rf /tmp/wordpress.tar.gz 
 
-RUN apt-get install -y vim 
 COPY tools/setup.sh /tmp/setup.sh
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
