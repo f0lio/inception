@@ -8,8 +8,8 @@ done
 if [ ! -f /var/www/wordpress/wp-config.php ]; then
     mv /var/www/wordpress/wp-config-sample.php /var/www/wordpress/wp-config.php
     sed -i 's/database_name_here/'${WP_DB_NAME}'/g' /var/www/wordpress/wp-config.php
-    sed -i 's/username_here/'${WP_ADMIN_USER_NAME}'/g' /var/www/wordpress/wp-config.php
-    sed -i 's/password_here/'${WP_ADMIN_USER_PASSWORD}'/g' /var/www/wordpress/wp-config.php
+    sed -i 's/username_here/'${WP_DB_USER}'/g' /var/www/wordpress/wp-config.php
+    sed -i 's/password_here/'${WP_DB_PASSWORD}'/g' /var/www/wordpress/wp-config.php
     sed -i 's/localhost/'${DB_HOSTNAME}'/g' /var/www/wordpress/wp-config.php
 fi
 
