@@ -44,4 +44,5 @@ fclean: clean
 
 rm:
 	@${COMPOSE} rm -f || true
-	@${COMPOSE} volumes rm -f || true
+
+.PHONY: .init up down build re clean fclean rm

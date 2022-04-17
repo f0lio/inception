@@ -27,8 +27,8 @@ services:
     networks:
       - inception-frontend
     ports:
-      - 80:80
-      - 443:443
+      - 80:80   #8080
+      - 443:443 #8443 
     volumes:
       - wp_volume:/var/www
     depends_on:
