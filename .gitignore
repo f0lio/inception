@@ -1,4 +1,5 @@
 .env*
+!.env.template
 !.env.example
 *.pem
 .DS_Store
