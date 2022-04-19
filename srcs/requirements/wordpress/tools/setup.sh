@@ -15,5 +15,5 @@ fi
 
 service php7.3-fpm start # for creating config directory
 echo "listen = 9000" >> /etc/php/7.3/fpm/pool.d/www.conf
-
+service php7.3-fpm stop 
 php-fpm7.3 -F -R
